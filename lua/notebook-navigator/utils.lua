@@ -25,6 +25,7 @@ end
 local find_supported_repls = function()
   local supported_repls = {
     { name = "iron", module = "iron" },
+    { name = "tunnel", module = "tunnel" },
     { name = "toggleterm", module = "toggleterm" },
     { name = "molten", module = "molten.health" },
   }

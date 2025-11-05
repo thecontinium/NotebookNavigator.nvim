@@ -11,6 +11,14 @@ repls.iron = function(start_line, end_line, repl_args, _cell_marker)
   return true
 end
 
+-- tunnel.nvim
+---@diagnostic disable-next-line: unused-local
+repls.tunnel = function(start_line, end_line, repl_args, _cell_marker)
+  -- Call the Tunnel command over the given line range
+  vim.cmd(("%d,%dTunnelRange"):format(start_line, end_line))
+  return true
+end
+
 -- toggleterm
 ---@diagnostic disable-next-line: unused-local
 repls.toggleterm = function(start_line, end_line, repl_args, cell_marker)
