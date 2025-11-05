@@ -11,11 +11,11 @@ repls.iron = function(start_line, end_line, repl_args, _cell_marker)
   return true
 end
 
--- tunnel.nvim
+-- tunnell.nvim
 ---@diagnostic disable-next-line: unused-local
-repls.tunnel = function(start_line, end_line, repl_args, _cell_marker)
-  -- Call the Tunnel command over the given line range
-  vim.cmd(("%d,%dTunnelRange"):format(start_line, end_line))
+repls.tunnell = function(start_line, end_line, repl_args, _cell_marker)
+  -- Call the Tunnell command over the given line range
+  vim.cmd(("%d,%dTunnellRange"):format(start_line, end_line))
   return true
 end
 
