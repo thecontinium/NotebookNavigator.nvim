@@ -172,6 +172,7 @@ to `false`. See issue for more details.
 ## Dependencies
 The currently supported REPLs are:
 - [iron.nvim](https://github.com/Vigemus/iron.nvim),
+- [tunnell]( https://github.com/sourproton/tunnell.nvim),
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) or
 - [molten-nvim](https://github.com/benlubas/molten-nvim)
 
