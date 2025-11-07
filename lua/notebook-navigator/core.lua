@@ -131,8 +131,10 @@ end
 M.run_cells_above = function(cell_marker, repl_provider, repl_args)
   local cell_object = miniai_spec("i", cell_marker)
 
-  local repl = get_repl(repl_provider)
-  repl(1, cell_object.to.line, repl_args)
+  if cell_object.from.line > 1 then
+    local repl = get_repl(repl_provider)
+    repl(1, cell_object.from.line - 1, repl_args)
+  end
 end
 
 M.run_cells_below = function(cell_marker, repl_provider, repl_args)
